@@ -8,9 +8,9 @@ import createFoodModel from "./Food";
 import createOrderModel from "./Order";
 import createSubFoodModel from "./SubFood";
 
-const sequelize = new Sequelize("app_food", "root", "1234", {
+const sequelize = new Sequelize("MySQL_db_app_food", "root", "1234", {
   host: "localhost",
-  port: 3069,
+  port: 3307,
   dialect: "mysql",
 });
 

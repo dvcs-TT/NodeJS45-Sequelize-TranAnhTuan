@@ -1,4 +1,4 @@
-import { Restaurant, User, RateRestaurant } from "../models";
+import { Restaurant, User, RateRestaurant } from "../models/index.js";
 
 const rateService = {
   getRates: async () => {

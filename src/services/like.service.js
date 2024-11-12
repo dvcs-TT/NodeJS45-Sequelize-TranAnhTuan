@@ -1,4 +1,4 @@
-import { Restaurant, User, LikeRestaurant } from "../models";
+import { Restaurant, User, LikeRestaurant } from "../models/index.js";
 
 const likeService = {
   getLikes: async () => {

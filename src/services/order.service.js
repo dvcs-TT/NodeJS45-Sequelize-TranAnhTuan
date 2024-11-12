@@ -1,4 +1,4 @@
-import { User, Food } from "../models";
+import { User, Food } from "../models/index.js";
 
 const orderService = {
   createOrder: async (data) => {

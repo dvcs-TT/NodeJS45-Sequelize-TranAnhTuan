@@ -1,4 +1,4 @@
-import { Restaurant } from "../models";
+import { Restaurant } from "../models/index.js";
 
 const restaurantService = {
   getRestaurants: async () => {

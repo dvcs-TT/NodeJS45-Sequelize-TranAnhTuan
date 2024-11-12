@@ -1,4 +1,4 @@
-import userService from "../services/user.service";
+import userService from "../services/user.service.js";
 
 const getUsers = () => async (req, res) => {
   try {
@@ -29,4 +29,4 @@ const getUserRates = () => async (req, res) => {
   }
 };
 
-export { getUsers, getUserLikes, getUserRates };
+export default { getUsers, getUserLikes, getUserRates };

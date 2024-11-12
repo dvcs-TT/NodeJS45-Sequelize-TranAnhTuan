@@ -1,4 +1,4 @@
-import restaurantService from "../services/restaurant.service";
+import restaurantService from "../services/restaurant.service.js";
 
 const getRestaurants = () => async (req, res) => {
   try {
@@ -29,4 +29,4 @@ const getRestaurantRates = () => async (req, res) => {
   }
 };
 
-export { getRestaurants, getRestaurantLikes, getRestaurantRates };
+export default { getRestaurants, getRestaurantLikes, getRestaurantRates };

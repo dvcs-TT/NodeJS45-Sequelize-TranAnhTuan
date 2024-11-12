@@ -1,9 +1,10 @@
 import express from "express";
-import likeRouter from "./like.router";
-import rateRouter from "./rate.router";
-import orderRouter from "./order.router";
-import userRouter from "./user.router";
-import restaurantRouter from "./restaurant.router";
+import likeRouter from "./like.router.js";
+import orderRouter from "./order.router.js";
+import rateRouter from "./rate.router.js";
+import restaurantRouter from "./restaurant.router.js";
+import userRouter from "./user.router.js";
+
 
 const rootRouter = express.Router();
 

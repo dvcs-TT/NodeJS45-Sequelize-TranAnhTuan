@@ -1,4 +1,4 @@
-import orderService from "../services/order.service";
+import orderService from "../services/order.service.js";
 
 const createOrder = () => async (req, res) => {
   try {
@@ -11,4 +11,4 @@ const createOrder = () => async (req, res) => {
   }
 };
 
-export { createOrder };
+export default { createOrder };

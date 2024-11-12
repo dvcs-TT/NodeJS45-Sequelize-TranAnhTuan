@@ -1,5 +1,5 @@
 import express from "express";
-import rateController from "../../controller/rate.controller";
+import rateController from "../controllers/rate.controller.js";
 
 const rateRouter = express.Router();
 

@@ -1,4 +1,4 @@
-import rateService from "../services/rate.service";
+import rateService from "../services/rate.service.js";
 
 const createRate = () => async (req, res) => {
   try {
@@ -20,4 +20,4 @@ const getRates = () => async (req, res) => {
   }
 };
 
-export { createRate, getRates };
+export default { createRate, getRates };

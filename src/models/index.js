@@ -1,28 +1,13 @@
-import { Sequelize } from "sequelize";
-import createUserModel from "./User";
-import createRestaurantModel from "./Restaurant";
-import createLikeRestaurantModel from "./LikeRestaurant";
-import createRateRestaurantModel from "./RateRestaurant";
-import createFoodTypeModel from "./FoodType";
-import createFoodModel from "./Food";
-import createOrderModel from "./Order";
-import createSubFoodModel from "./SubFood";
+import sequelize from "../common/sequelize/connect.sequelize.js";
 
-const sequelize = new Sequelize("MySQL_db_app_food", "root", "1234", {
-  host: "localhost",
-  port: 3307,
-  dialect: "mysql",
-});
-
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log("Connect to database successful");
-  })
-  .catch((error) => {
-    console.log("Fail to connect database ");
-    throw error;
-  });
+import { createUserModel } from "./User.js";
+import { createRestaurantModel } from "./Restaurant.js";
+import { createLikeRestaurantModel } from "./LikeRestaurant.js";
+import { createRateRestaurantModel } from "./RateRestaurant.js";
+import { createFoodTypeModel } from "./FoodType.js";
+import { createFoodModel } from "./Food.js";
+import { createOrderModel } from "./Order.js";
+import { createSubFoodModel } from "./SubFood.js";
 
 // Initial model
 const User = createUserModel(sequelize);

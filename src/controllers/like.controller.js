@@ -1,4 +1,4 @@
-import likeService from "../services/like.service";
+import likeService from "../services/like.service.js";
 
 const createLike = () => async (req, res) => {
   try {
@@ -30,4 +30,4 @@ const getLikes = () => async (req, res) => {
   }
 };
 
-export { createLike, deleteLike, getLikes };
+export default { createLike, deleteLike, getLikes };
